@@ -23,14 +23,14 @@ class RegisterFormType extends AbstractType
                 'label' => 'Mot de passe'
             ])
             ->add('firstname', TextType::class, [
-                'label' => 'prenom'
+                'label' => 'Prenom'
             ])
-            ->add('lastname',TextType::class, [
-                'label' => 'nom'
+            ->add('lastname', TextType::class, [
+                'label' => 'Nom'
             ]) 
             ->add('submit', SubmitType::class, [
                 'label' => 'Valider',
-                'Validate' => false,
+                'validate' => false,
                 'attr' => [
                     'class' => 'd-block col-3 my-3 mx-auto btn btn-success'
                 ]
