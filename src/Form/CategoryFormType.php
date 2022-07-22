@@ -4,10 +4,10 @@ namespace App\Form;
 
 use App\Entity\Category;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class CategoryFormType extends AbstractType
 {
@@ -15,15 +15,15 @@ class CategoryFormType extends AbstractType
     {
         $builder
             ->add('name', TextType::class, [
-                'label' => 'Nom de la catégorie', 
+                'label' => 'Nom de la catégorie',
             ])
-           ->add('submit', SubmitType::class, [
-              'label' => 'Valider',
-              'validate' => false,
-              'attr' => [
-                'class' => 'd-block mx-aauto col-3 my-3 btn btn-success'
-              ]
-           ])
+            ->add('submit', SubmitType::class, [
+                'label' => 'Valider',
+                'validate' => false,
+                'attr' => [
+                    'class' => 'd-block mx-auto col-3 my-3 btn btn-success'
+                ],
+            ])
         ;
     }
 
