@@ -31,7 +31,7 @@ class CategoryFixtures extends Fixture
             'Sciences',
             'Musique',
             'Hi-Tech',
-            'Ecologie'
+            'Eclogie'
         ];
          foreach($categories as $cat) {
 
