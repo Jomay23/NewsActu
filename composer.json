@@ -4,7 +4,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.0",
@@ -86,8 +86,7 @@
         ],
         "compile": [
             "php bin/console doctrine:schema:update --force --no-interaction"
-       ]
-
+        ]
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -99,7 +98,6 @@
         }
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^3.4",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "5.4.*",
         "symfony/css-selector": "5.4.*",
